@@ -1,6 +1,6 @@
 <template>
-	<div>
-		<header class="bg-indigo-600 flex justify-between text-white">
+	<div class="bg-indigo-600">
+		<header class="container mx-auto flex justify-between text-white">
 			<h1 class="p-2"><router-link to="/">Brand</router-link></h1>
 			<div>
 				<nav class="inline-block">
@@ -19,7 +19,7 @@
 						</li>
 					</ul>
 				</nav>
-				<div class="inline-block">{{ userName }}</div>
+				<div class="inline-block p-2">{{ userName }}</div>
 			</div>
 		</header>
 	</div>
@@ -30,9 +30,6 @@ import { mapState } from "vuex";
 export default {
 	computed: {
 		...mapState(["userName", "userAge"]),
-		nomeIdade() {
-			return `Meu nome é ${this.userName} e tenho ${this.userAge} anos.`;
-		},
 	},
 };
 </script>

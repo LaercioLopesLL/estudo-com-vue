@@ -2,11 +2,11 @@
 	<div>
 		<div class="grid grid-cols-3 gap-6">
 			<div
-				class="bg-blue-300 p-4 rounded-md"
+				class="bg-blue-100 p-4 rounded-md"
 				v-for="product in products"
 				:key="product.name"
 			>
-				<h3 class="text-2xl mb-2 text-blue-900">{{ product.name }}</h3>
+				<h3 class="text-2xl mb-2 uppercase">{{ product.name }}</h3>
 				<img
 					class="rounded"
 					:src="product.imagem"
@@ -14,7 +14,7 @@
 				/>
 				<p class="">{{ product.preco }}</p>
 				<button
-					class="bg-blue-500 p-2 rounded text-white font-semibold"
+					class="bg-blue-600 p-2 rounded text-white font-semibold"
 				>
 					Comprar
 				</button>
